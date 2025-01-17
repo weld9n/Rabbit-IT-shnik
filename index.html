@@ -7,58 +7,104 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #fff, #f8f9fa);
+            color: #333;
         }
-        .hero {
-            background-color: #4CAF50;
-            color: white;
-            padding: 50px 20px;
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .hero-section {
             text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #a2d9ce, #f8c471);
         }
-        .hero img {
-            max-width: 300px;
-            margin-top: 20px;
-            border-radius: 15px;
+        .hero-section img {
+            max-width: 100%;
+            border-radius: 10px;
         }
-        .btn-custom {
-            background-color: #ff9800;
-            color: white;
-            border-radius: 20px;
-            margin: 5px;
+        .features {
+            text-align: center;
+            margin: 30px 0;
         }
-        .btn-custom:hover {
-            background-color: #e68900;
+        .features .card {
+            margin: 10px;
         }
         footer {
-            background-color: #343a40;
-            color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #f8c471;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Rabbit Course</a>
+            <a class="navbar-brand" href="index.html">Rabbit Course</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">О курсе</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Расписание</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="hero">
-        <h1>Программирование для кроликов</h1>
-        <p>Обучаем программированию за 14 дней. Присоединяйтесь к нашему пушистому сообществу!</p>
-        <img src="rabbit.jpg" alt="Rabbit with glasses and laptop">
+    <div class="hero-section">
+        <h1>Уникальный курс по программированию для домашних кроликов</h1>
+        <p>Обучите своего кролика за 14 дней и превратите его в IT-специалиста!</p>
+        <img src="rabbit.jpg" alt="Rabbit Programming Course" class="img-fluid">
         <div class="mt-4">
-            <a href="about.html" class="btn btn-primary">О курсе</a>
-            <a href="schedule.html" class="btn btn-success">Расписание</a>
-            <a href="contact.html" class="btn btn-custom">Контакты</a>
+            <a href="about.html" class="btn btn-primary btn-lg">Узнать больше</a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">Связаться с нами</a>
+        </div>
+    </div>
+
+    <div class="features container">
+        <h2>Что вас ждет на курсе</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ежедневные вебинары</h5>
+                        <p class="card-text">Обучение в удобном формате, чтобы ваш кролик был в курсе современных технологий.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Поддержка 24/7</h5>
+                        <p class="card-text">Ваша кроличья команда всегда готова помочь в решении любых задач.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Гарантия успеха</h5>
+                        <p class="card-text">Сертификат и новые возможности после завершения курса!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Rabbit Programming Course. Все права защищены.</p>
+        <p>&copy; 2025 Rabbit Programming Course | <a href="contact.html">Связаться с нами</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
