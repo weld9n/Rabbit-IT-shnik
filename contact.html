@@ -17,20 +17,21 @@
         <h1>Связаться с нами</h1>
         <p>У вас есть вопросы или предложения? Напишите нам!</p>
         <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Имя</label>
-                <input type="text" class="form-control" id="name" placeholder="Ваше имя">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Ваш email">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Сообщение</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Отправить</button>
-        </form>
+            <form action="send_email.php" method="POST">
+    <div class="mb-3">
+        <label for="name" class="form-label">Имя</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ваш email">
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Сообщение</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Ваше сообщение"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
         <a href="index.html" class="btn btn-secondary mt-3">На главную</a>
     </div>
 
