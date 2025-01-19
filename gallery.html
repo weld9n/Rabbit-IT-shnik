@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея выпускников</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .gallery-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .gallery-section h1 {
+            margin-bottom: 30px;
+        }
+        .gallery img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #f8c471;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Rabbit Course</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gallery-section">
+        <h1>Галерея кроликов-учеников</h1>
+        <p>Наши выпускники успешно освоили курс и готовы завоёвывать IT-мир!</p>
+        <div class="container">
+            <div class="row gallery">
+                <!-- Первый ряд -->
+                <div class="col-md-4">
+                    <img src="images/rabbit1.jpg" alt="Кролик-программист">
+                    <p>Миша, успешно автоматизировал процесс кормления морковкой.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/rabbit2.jpg" alt="Кролик-разработчик">
+                    <p>Соня, разработала первый веб-сайт для кроличьей фермы.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/rabbit3.jpg" alt="Кролик-выпускник">
+                    <p>Боря, создал программу для отслеживания запасов сена.</p>
+                </div>
+                <!-- Второй ряд -->
+                <div class="col-md-4">
+                    <img src="images/rabbit4.jpg" alt="Кролик">
+                    <p>Катя, изучила основы машинного обучения за неделю.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/rabbit5.jpg" alt="Кролик">
+                    <p>Паша, разработал игру для кроликов.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/rabbit6.jpg" alt="Кролик">
+                    <p>Женя, внедрил систему умного дома в свою клетку.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rabbit Programming Course | <a href="contact.html">Связаться с нами</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
