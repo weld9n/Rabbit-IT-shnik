@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на курс</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .form-section {
+            text-align: center;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #f8c471;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Rabbit Course</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-section">
+        <h1>Запишитесь на наш курс</h1>
+        <p>Цена курса: <strong>£199</strong></p>
+        <form class="container mt-4" style="max-width: 600px;" action="#" method="post">
+            <div class="mb-3">
+                <label for="ownerName" class="form-label">Ваше имя</label>
+                <input type="text" class="form-control" id="ownerName" name="ownerName" required>
+            </div>
+            <div class="mb-3">
+                <label for="rabbitName" class="form-label">Имя вашего кролика</label>
+                <input type="text" class="form-control" id="rabbitName" name="rabbitName" required>
+            </div>
+            <div class="mb-3">
+                <label for="contactInfo" class="form-label">Контактные данные (E-mail или телефон)</label>
+                <input type="text" class="form-control" id="contactInfo" name="contactInfo" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rabbit Programming Course | <a href="contact.html">Связаться с нами</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
