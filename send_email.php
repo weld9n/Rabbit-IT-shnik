@@ -12,10 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail = new PHPMailer;
         $mail->isSMTP();
-        $mail->Host = 'smtp.your-email-provider.com'; // Используйте ваш SMTP сервер
+        $mail->Host = 'smtp.gmail.com'; // Используйте ваш SMTP сервер
         $mail->SMTPAuth = true;
-        $mail->Username = 'your-email@example.com'; // Ваш email
-        $mail->Password = 'your-email-password'; // Ваш пароль для почты
+        $mail->Username = 'it.rabbit.it@gmail.com'; // Ваш email
+        $mail->Password = 'kakamakaka03'; // Ваш пароль для почты
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
